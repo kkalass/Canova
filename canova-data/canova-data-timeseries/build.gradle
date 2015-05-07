@@ -1,0 +1,5 @@
+
+description = 'canova-data-timeseries'
+dependencies {
+  compile project(':canova-api')
+}

@@ -1,0 +1,6 @@
+
+description = 'canova-data-image'
+dependencies {
+  compile project(':canova-api')
+    compile group: 'com.github.jai-imageio', name: 'jai-imageio-core', version:'1.3.0'
+}

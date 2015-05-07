@@ -1,0 +1,5 @@
+
+description = 'canova-nd4j-audio'
+dependencies {
+  compile project(':canova-data:canova-data-image')
+}

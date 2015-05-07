@@ -1,0 +1,30 @@
+rootProject.name = 'canova-parent'
+include ':canova-api'
+include ':canova-nd4j:canova-nd4j-nlp'
+include ':canova-nd4j:canova-nd4j-image'
+include ':canova-nd4j:canova-nd4j-timeseries'
+include ':canova-nd4j:canova-nd4j-audio'
+include ':canova-nd4j:canova-nd4j-common'
+include ':canova-nd4j:canova-nd4j-codec'
+include ':canova-nd4j'
+include ':canova-data:canova-data-nlp'
+include ':canova-data:canova-data-image'
+include ':canova-data:canova-data-timeseries'
+include ':canova-data:canova-data-audio'
+include ':canova-data'
+include ':canova-cli'
+
+project(':canova-api').projectDir = "$rootDir/canova-api" as File
+project(':canova-nd4j:canova-nd4j-nlp').projectDir = "$rootDir/canova-nd4j/canova-nd4j-nlp" as File
+project(':canova-nd4j:canova-nd4j-image').projectDir = "$rootDir/canova-nd4j/canova-nd4j-image" as File
+project(':canova-nd4j:canova-nd4j-timeseries').projectDir = "$rootDir/canova-nd4j/canova-nd4j-timeseries" as File
+project(':canova-nd4j:canova-nd4j-audio').projectDir = "$rootDir/canova-nd4j/canova-nd4j-audio" as File
+project(':canova-nd4j:canova-nd4j-common').projectDir = "$rootDir/canova-nd4j/canova-nd4j-common" as File
+project(':canova-nd4j:canova-nd4j-codec').projectDir = "$rootDir/canova-nd4j/canova-nd4j-codec" as File
+project(':canova-nd4j').projectDir = "$rootDir/canova-nd4j" as File
+project(':canova-data:canova-data-nlp').projectDir = "$rootDir/canova-data/canova-data-nlp" as File
+project(':canova-data:canova-data-image').projectDir = "$rootDir/canova-data/canova-data-image" as File
+project(':canova-data:canova-data-timeseries').projectDir = "$rootDir/canova-data/canova-data-timeseries" as File
+project(':canova-data:canova-data-audio').projectDir = "$rootDir/canova-data/canova-data-audio" as File
+project(':canova-data').projectDir = "$rootDir/canova-data" as File
+project(':canova-cli').projectDir = "$rootDir/canova-cli" as File

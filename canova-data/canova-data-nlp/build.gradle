@@ -1,0 +1,9 @@
+
+description = 'canova-data-nlp'
+dependencies {
+    compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.3.1'
+  compile project(':canova-api')
+    compile group: 'it.unimi.dsi', name: 'dsiutils', version:'2.2.2'
+    compile group: 'org.cleartk', name: 'cleartk-snowball', version:'2.0.0'
+    compile group: 'org.cleartk', name: 'cleartk-opennlp-tools', version:'2.0.0'
+}

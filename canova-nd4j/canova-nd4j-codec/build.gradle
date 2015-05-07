@@ -1,0 +1,8 @@
+
+description = 'canova-nd4j-codec'
+dependencies {
+  compile project(':canova-nd4j:canova-nd4j-image')
+    compile group: 'org.jcodec', name: 'jcodec', version:'0.1.5'
+  compile project(':canova-api')
+    testCompile group: 'org.nd4j', name: 'nd4j-jblas', version:'0.0.3.5.5.3-SNAPSHOT'
+}

@@ -1,0 +1,5 @@
+
+description = 'canova-nd4j-timeseries'
+dependencies {
+  compile project(':canova-data:canova-data-timeseries')
+}

@@ -1,9 +1,14 @@
 allprojects  {
+  repositories {
+    mavenLocal()
+  }
   apply plugin: 'maven'
 
   group = 'org.nd4j'
-version = '0.0.0.2-SNAPSHOT'
+  version = '0.0.0.2-SNAPSHOT'
 }
+
+ext.ND4J_VERSION="0.0.3.5.5.3-SNAPSHOT"
 
 subprojects {
   apply plugin: 'java'
@@ -11,11 +16,11 @@ subprojects {
   targetCompatibility = 1.7
 
   task packageSources(type: Jar) {
-classifier = 'sources'
-from sourceSets.main.allSource
+    classifier = 'sources'
+    from sourceSets.main.allSource
 
-}
-artifacts.archives packageSources
+  }
+  artifacts.archives packageSources
   repositories {
     mavenLocal()
     
